@@ -1,0 +1,187 @@
+/* ****** STILOVI ZA CHAT STRANICU ****** */
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  width: 50vw;
+  border: 2px solid #262626;
+  margin: auto;
+}
+
+.App-header {
+  background-color: #262626;
+  overflow: visible;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+/* ****** STILOVI ZA LOGIN STRANICU ****** */
+
+.signup {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: auto;
+  height: 700px;
+  width: 600px;
+  border: 2px solid #262626;
+  border-radius: 5px;
+  box-shadow: 5px 5px 20px;
+}
+
+.signup-header {
+  width: 100%;
+  background-color: #262626;
+  color: white;
+  text-align: center;
+}
+
+.signup-form {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.signup-form label {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+}
+
+.signup-input {
+  width: 400px;
+  height: 40px;
+  border: 2px solid #262626;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.signup-submit {
+  width: 140px;
+  height: 70px;
+  background-color: orangered;
+  border: 2px solid white;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  margin-top: 40px;  
+}
+
+.signup-submit:hover {
+  background-color: rgb(192, 51, 0);
+}
+
+/* ****** STILOVI ZA POSLANE I PRIMLJENE PORUKE ****** */
+
+.Messages-list {
+  padding: 20px 0;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  list-style: none;
+  padding-left: 0;
+  flex-grow: 1;
+  overflow: auto;
+}
+
+.Messages-message {
+  display: flex;
+  margin-top: 10px;
+}
+
+.Messages-message.currentMember {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.Message-content {
+  display: inline-block;
+}
+
+.currentMember > .Message-content {
+  align-items: flex-end;
+}
+
+.Messages-message > .avatar {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 10px -10px;
+}
+
+.icon {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+}
+
+.Message-content > .username {
+  display: block;
+  color: gray;
+  font-size: 14px;
+  padding-bottom: 4px;
+}
+
+.Message-content > .text {
+  padding: 10px;
+  max-width: 400px;
+  margin: 0;
+  border-radius: 12px;
+  background-color: cornflowerblue;
+  color: white;
+  display: inline-block;
+}
+
+.currentMember > .Message-content .text {
+  background-color: orangered;
+}
+
+/* ****** STILOVI VEZANI ZA FORMU INPUTA PORUKE ****** */
+
+.input-form {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  max-width: 900px;
+  margin: 0 auto 40px;
+}
+
+.input-form input {
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid orangered;
+  flex-grow: 1;
+}
+
+.input-send {
+  padding: 5px 10px;
+  font-size: 16px;
+  background-color: orangered;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  margin-left: 10px;
+}
+
+.input-logout {  
+  background-color: rgba(112, 30, 0, 0.541);
+  border-radius: 8px; 
+  border: none;
+  margin-left: 10px;
+  color: white;
+  font-size: 16px;
+}
+
+.input-logout:hover {
+  background-color: rgb(112, 30, 0);
+  cursor: pointer;
+}
+
