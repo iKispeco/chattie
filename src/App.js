@@ -59,7 +59,6 @@ class App extends Component {
             const messages = this.state.messages;
             messages.push({ member, text: data });
             this.setState({ messages });
-            console.log(member);
           });
 
           //LISTENERI TKO DOLAZI I ODLAZI IZ KAKO BI SE PRATIO BROJ KORISNIKA

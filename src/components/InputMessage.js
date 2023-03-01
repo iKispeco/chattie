@@ -9,6 +9,10 @@ function InputMessage(props) {
 
   const onSubmit = (e) => {
     e.preventDefault();
+
+    if (text.length === 0) {
+      return alert("Please write something");
+    }
     setText("");
     props.onSendMessage(text);
   };
